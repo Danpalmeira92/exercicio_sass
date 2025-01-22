@@ -1,0 +1,15 @@
+{
+  "name": "exercicio_sass",
+  "version": "1.0.0",
+  "description": "Projeto de comclusão do módulo de SASS do Curso de Front-end da EBAC",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass source/main.scss build/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Palmeira",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.4"
+  }
+}
