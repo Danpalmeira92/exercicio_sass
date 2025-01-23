@@ -40,7 +40,58 @@ header .container {
     .menu li a {
         color: variaveis.$corDaFonte;
         text-decoration: none;
+        transition: transform 0.3 ease;
+        cursor: pointer;
+
+        &:hover {
+            color: #dad5d5;
+            transform: scale(1.2);
+        }
     }
+
+    .branding {
+        display: flex;
+        align-items: center;
+    }
+
+    .branding img {
+        display: block;
+        border-radius: 6px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .branding h1 {
+        margin: 0;
+        margin-left: 16px;
+        color: variaveis.$corDaFonte;
+    }
+}
+
+.inicio .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inicio img {
+    width: 400px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inicio .content {
+    max-width: 600px;
+}
+
+.inicio h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.inicio p {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 section {
@@ -69,11 +120,14 @@ section {
         border-radius: 8px;
         margin-top: 8px;
         text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: green;
+        }
     }
     
-    .product-button:hover {
-        background-color: variaveis.$corSecundaria;
-    }
+    
 }
 
 @media screen and (max-width: 1023px) {
@@ -88,6 +142,23 @@ section {
 }
 
 @media screen and (max-width: 767px) {
+
+    .inicio .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .inicio img {
+        margin-bottom: 20px;
+        width: 80%;
+        height: auto;
+    }
+
+    .inicio .content {
+        max-width: 100%;
+    }
+
     .products {
         display: block;
     }
