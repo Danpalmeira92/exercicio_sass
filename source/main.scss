@@ -40,12 +40,10 @@ header .container {
     .menu li a {
         color: variaveis.$corDaFonte;
         text-decoration: none;
-        transition: transform 0.3 ease;
         cursor: pointer;
 
         &:hover {
             color: #dad5d5;
-            transform: scale(1.2);
         }
     }
 
@@ -71,6 +69,7 @@ header .container {
     display: flex;
     align-items: center;
     gap: 20px;
+   
 }
 
 .inicio img {
@@ -95,8 +94,10 @@ header .container {
 }
 
 section {
-    padding: 56px 0;
+    padding: 128px 0;
 }
+
+
 
 .products {
     margin-top: 40px;
